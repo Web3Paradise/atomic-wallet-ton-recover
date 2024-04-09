@@ -96,7 +96,7 @@ async function recoverTon() {
 
     var pkBytes = null;
 
-    if (mnemonic !== null) {
+    if (mnemonic) {
         mnemonicArr = mnemonic.split(" ")
         console.log("Mnemonic is set. Generating a private key")
         keyPair = await tonMnemonic.mnemonicToKeyPair(mnemonicArr);
